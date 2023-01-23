@@ -1,0 +1,1 @@
+﻿select * from usersTBL where email like '%@gmail%' order by LastName asc

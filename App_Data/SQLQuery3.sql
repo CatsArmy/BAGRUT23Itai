@@ -1,0 +1,1 @@
+﻿select * from usersTBL where year>2018 AND year<2021

@@ -1,0 +1,1 @@
+﻿select * from usersTBL where gender = 'female' AND FirstName like '%a%' or LastName like '%a%'

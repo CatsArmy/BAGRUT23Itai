@@ -1,0 +1,1 @@
+﻿insert into usersTBL values ('whentheimposterissuss','amogus','sus','idfk','amgongus.issus@gmail.com',2020,'male')
