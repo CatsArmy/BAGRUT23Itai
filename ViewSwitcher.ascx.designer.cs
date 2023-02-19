@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BAGRUT23Itai {
-    
-    
-    public partial class ViewSwitcher {
+namespace BAGRUT23Itai
+{
+
+
+    public partial class ViewSwitcher
+    {
     }
 }

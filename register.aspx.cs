@@ -11,10 +11,7 @@ namespace BAGRUT23Itai
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           int x;
-           string y;
-            x = 10;
-            y = "Itai";
+          
         }
     }
 }

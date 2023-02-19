@@ -3,7 +3,7 @@
      <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
     <style>
         h1{
-            font-family: 'MinecraftiaRegular';/*<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/> i just found on goggle and it fit the theme*/
+            font-family: 'MinecraftiaRegular';
             font-weight: normal;
             font-style: normal;
             text-align:center;

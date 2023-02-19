@@ -60,7 +60,7 @@
 </td>
      </tr>
     <tr>
-        <td class="mpFooter">Footer</td>
+        <td class="mpFooter">Footer <br> Admin only regsiter table <a href ="ShowTable.aspx">Here</td>
     </tr>
     </table>
 </body>
