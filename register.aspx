@@ -28,9 +28,9 @@
        </style>
      <script> 
          var ok = true;
-         // username must contains at least 5 letters 
+         // usesNames must contains at least 5 letters 
          function checkUser() {
-             var un = document.getElementById("userName").value;
+             var un = document.getElementById("usesName").value;
              if (un.length < 5) {
                  document.getElementById("errUser").style.display = 'block';
                  ok = false;
@@ -57,7 +57,7 @@
                  document.getElementById("errPass2").style.display = 'none';
              }
          }
-         function checkPassCon(){
+         function checkPassCon() {
              var pw = document.getElementById("password").value;
              var pwc = document.getElementById("passwordcon").value;
              if (pw == pwc) {
@@ -75,7 +75,7 @@
              checkUser();
              checkPass();
              checkPassCon();
-             alert("הערך של OK הוא:" + ok);
+             alert("the value of OK is:" + ok);
              return ok;
          }
 
@@ -86,14 +86,15 @@
        <table>
            <tr>
                <td>
-                  <input type="text" name="userName" id="userName" /> 
+                   <%= sqlMsg %>
+                   <h2> <%= msg %> </h2>
+                  <input type="text" name="usesName" id="usesName"/> 
                </td>
                 <td id="errUser" style="display: none; color: orangered;"> 
-                   מה קורה חבר? 5 תווים לפחות
+                   You must have 5 or more characters
                   </td> 
-
                <td>
-                usernames 
+                userName
                </td>
               </tr>
                
@@ -102,7 +103,7 @@
                  <input type="text" name="LastName" id="LastName" />  
                </td>
                <td>
-                   last name
+                   Last name
                </td>
               </tr>
                
@@ -114,16 +115,16 @@
                    First name 
                </td>
               </tr>
-               
            <tr>
                <td>
                     <input type="password" name="password" id="password" />
                </td>
                 <td id="errPass1" style="display: none; color: red;"> 
-                        הסיסמא צריכה להיות באורך 4 לפחות
+                        the password must be longer then 6 characters
                  </td> 
-               <td id="errConfirmPass1" style="display:none; color: red;">The password must match the confirmation password</td>
-
+               <td id="errConfirmPass1" style="display:none; color: red;">
+                   The password must match the confirmation password
+               </td>
                <td>
                    password
                </td>
@@ -134,9 +135,11 @@
                    <input type="password" name="passwordcon" id="passwordcon" />
                </td>
                <td id="errPass2" style="display: none; color: red;"> 
-                        הסיסמא צריכה להיות באורך 4 לפחות
+                        the password must be longer then 6 characters
               </td>
-                   <td id="errConfirmPass2" style="display:none; color: red;">The password must match the confirmation password</td>
+                   <td id="errConfirmPass2" style="display:none; color: red;">
+                       The password must match the confirmation password
+                   </td>
                <td>
                    password confirmation
                </td>
@@ -171,21 +174,13 @@
            <tr>
                <td>
                    <select name="year">
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2018">2018</option>
-            <option value="2018">2018</option>
+             <%= yearLoop %>
         </select>
                </td>
                <td>
-                   <input type="submit" name="submit" value="log in" />
+                   <input type="submit" name="submit" value="submit" />
                </td>
               </tr>
-              
-           
-
        </table>  
     </form>
 </asp:Content>

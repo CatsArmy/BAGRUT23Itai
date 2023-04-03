@@ -38,7 +38,8 @@
  }
     
      </style>
-    
+    <script>
+    </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <!--Head Area closes-->
