@@ -17,5 +17,18 @@ namespace BAGRUT23Itai
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        void session_Start(object sender, EventArgs e)
+        {
+            Session["uName"] = "אורח";
+            Session["userFname"] = "אורח";
+            Session["admin"] = "no";
+        }
+        void session_end(object sender, EventArgs e)
+        {
+            Session["uName"] = "אורח";
+            Session["userFname"] = "אורח";
+            Session["admin"] = "no";
+        }
+
     }
 }
