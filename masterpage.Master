@@ -1,45 +1,72 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="BAGRUT23Itai.masterpage" %>
-
+    <!--Custom Font and icon i got from the web-->
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
+<link rel = "icon" href="imgs/minecraft icon.jpg" type="image/icon" />
+    <!--To Use The Custom Font Use <style> <html/class Tag> { font-family: 'MinecraftiaRegular'; } the icon just does its thing -->
 <!DOCTYPE html>
 
 <html>
     <!--head Area-->
 <head runat="server">
- <title></title>
     <style>
-        body{direction:rtl;}
+        body
+        {
+            direction:rtl;
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
 
- .mpTable {
- border: 1px solid silver;
- width:1400px;
- }
- .mpHeader {
- border: 1px solid silver;
- text-align:center;
- width:100%;
- height:10%;
- }
- .mpMenu {
- border: 1px solid silver;
- text-align:center;
- width:100%;
- height:5%;
- }
- .mpMain {
- border: 1px solid silver;
- width:100%;
- height:80%;
- }
- .mpFooter {
- border: 1px solid silver;
- text-align:center;
- width:100%;
- height:5%;
- }
-    
+        .mpTable {
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+            width: 1200px;
+        }
+        .mpHeader {
+            text-align: center;
+            height: 100px;
+            height: auto;
+            object-fit: scale-down;
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
+        .mpMenu {
+            border: 1px solid silver;
+            text-align: center;
+            width: 100%;
+            height: 5%;
+            background: conic-gradient();
+            background-color: rgb(62, 61, 61, 0.35);
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
+        .mpMain {
+            border: 1px solid silver;
+            width: 100%;
+            height: 80%;
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
+        .mpFooter {
+            border: 1px solid silver;
+            text-align: center;
+            width: 100%;
+            height: 5%;
+            font-family: 'MinecraftiaRegular';
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
      </style>
-    <script>
-    </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <!--Head Area closes-->
@@ -47,10 +74,13 @@
 <body>
 <table class="mpTable">
     <tr>
-        <td class="mpHeader">Title </td>
+        <td class="mpHeader"><img src="imgs/MinecraftLogoResized.png" /></td>
     </tr>
     <tr>
-        <td class="mpMenu"> Menu</td>
+        <td class="mpMenu">
+        
+ <%=msg %>
+            </td>
     </tr>
     <tr>
         <td class="mpMain">
@@ -61,7 +91,8 @@
 </td>
      </tr>
     <tr>
-        <td class="mpFooter">Footer <br> Admin only regsiter table <a href ="ShowTable.aspx">Here</td>
+        <td class="mpFooter">Insert Legal stuff that no one cares about atm<br />
+        </td>
     </tr>
     </table>
 </body>

@@ -19,14 +19,14 @@ namespace BAGRUT23Itai
         }
         void session_Start(object sender, EventArgs e)
         {
-            Session["uName"] = "אורח";
-            Session["userFname"] = "אורח";
+            Session["uName"] = "Guest";
+            Session["userFname"] = "Guest";
             Session["admin"] = "no";
         }
         void session_end(object sender, EventArgs e)
         {
-            Session["uName"] = "אורח";
-            Session["userFname"] = "אורח";
+            Session["uName"] = "Guest";  
+            Session["userFname"] = "Guest";
             Session["admin"] = "no";
         }
 

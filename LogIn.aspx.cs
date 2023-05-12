@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,7 +19,7 @@ namespace BAGRUT23Itai
             {
                 string un = Request.Form["uname"];
                 string pass = Request.Form["pass"];
-
+                
                 sqlLogin = $"select * from usersTBL where usesName = '{un}' and password = '{pass}'";
                 DataTable table = Helper.ExecuteDataTable("usersDataBase.mdf", sqlLogin);
                 int length = table.Rows.Count;
@@ -26,9 +27,19 @@ namespace BAGRUT23Itai
                     msg = "Username/Password incorrrect";
                 else
                 {
-                    Session["uName"] = un;
-                    Session["userFname"] = table.Rows[0]["FirstName"];
-                    Response.Redirect("WhatMinecraft.aspx");
+                    if (un == "admin" && pass == "admin")
+                    {
+                        Session["admin"] = "yes";
+                        Session["uName"] = un;
+                        Session["userFname"] = "admin";
+                        Response.Redirect("ShowTable.aspx");
+                    }
+                    else
+                    {
+                        Session["uName"] = un;
+                        Session["userFname"] = table.Rows[0]["FirstName"];
+                        Response.Redirect("WhatMinecraft.aspx");
+                    }
                 }
 
             }

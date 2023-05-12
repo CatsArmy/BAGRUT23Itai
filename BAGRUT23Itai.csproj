@@ -107,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\usersDataBase.mdf" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -126,7 +127,23 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="imgs\bettermcfabric-modified.png" />
+    <Content Include="imgs\bettermcfabric.png" />
+    <Content Include="imgs\bettermcforge3.png" />
+    <Content Include="imgs\bettermcplus.png" />
+    <Content Include="imgs\Creeper Aw man.jpg" />
+    <Content Include="imgs\Creeper Awwwww man.jpg" />
+    <Content Include="imgs\Creeper Awwwww So we back in the mines.png" />
+    <Content Include="imgs\CreeperAww.png" />
+    <Content Include="imgs\CreeperAwwResizeBEEG.png" />
+    <Content Include="imgs\D2ex7md.png" />
+    <Content Include="imgs\horizion.jpeg" />
+    <Content Include="imgs\logo.png" />
+    <Content Include="imgs\mediablock-buzzybees.jpg" />
+    <Content Include="imgs\minecraft icon.jpg" />
+    <Content Include="imgs\MinecraftLogo.png" />
     <Content Include="LogIn.aspx" />
+    <Content Include="LogOut.aspx" />
     <Content Include="Minecraft.aspx" />
     <Content Include="MinecraftRealms.aspx" />
     <Content Include="MinecraftServer.aspx" />
@@ -134,6 +151,8 @@
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="masterpage.Master" />
+    <Content Include="imgs\mount.webp" />
+    <Content Include="imgs\mount2.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -211,6 +230,13 @@
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="masterpage.Master.cs">
       <DependentUpon>masterpage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,9 +309,7 @@
       <DependentUpon>WhatMinecraft.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

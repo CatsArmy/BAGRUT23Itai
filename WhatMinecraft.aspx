@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="WhatMinecraft.aspx.cs" Inherits="BAGRUT23Itai.WhatMinecraft" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
     <style>
         h1{
             font-family: 'MinecraftiaRegular';
@@ -62,8 +61,6 @@
             Many commentators have described the game's physics system as unrealistic.
             The game also contains a material called redstone, which can be used to make primitive mechanical devices,electrical circuits, and logic gates,
             allowing for the construction of many complex systems.</h2></td></tr>
-            
-        <tr><td>   <p> Multiplayer in Minecraft enables multiple players to interact and communicate with each other on a single world. <a href="MinecraftSever.aspx"> Click here</a> for more info. </p></td></tr>
 
            
                </table>

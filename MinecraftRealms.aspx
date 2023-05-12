@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="MinecraftRealms.aspx.cs" Inherits="BAGRUT23Itai.MinecraftRealms" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
     <style>
         h1{
             font-family: 'MinecraftiaRegular';
@@ -50,9 +49,11 @@
         img{
             border-radius: 8px;   
          }
+        img.mpHeader{
+            width:1400px;
+        }
     </style>
     <title>Minecraft</title>
-        <link rel = "icon" href="imgs/minecraft icon.jpg" type="image/icon" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <table border="1"> 

@@ -11,7 +11,7 @@ h3 {text-align:center}
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>user table</h1> 
+
 <h3> <%=  sqlSelect %> </h3>
 <table border="1">
 <%= st %>
